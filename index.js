@@ -399,7 +399,9 @@ app.post('/webhook', express.json({type: 'application/json'}),async (request, re
             }
             response.json({received: true});
         });
-            
+
+
+            console.log("hey")
 app.post("/getPurchase",author,async function(req,res){
     const user = req.body.user;
     const email = user.data.result.email;
